@@ -1,0 +1,218 @@
+
+.navbar {
+    padding: 1rem 0; 
+    z-index: 10;
+}
+
+.logo {
+    width: 40px; 
+    height: auto; 
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: #b0b0b0; 
+}
+
+.nav-link {
+    margin: 0 0.5rem; 
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00bfff; 
+}
+
+.navbar-toggler-icon {
+    background-color: white; 
+}
+
+.menu {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    gap: 15px; 
+}
+.menu-item .nav-link {
+    text-decoration: none; 
+    font-size: 16px; 
+    padding: 3px 12px;
+    border: 2px solid black; 
+    border-radius: 25px; 
+    display: inline-block; 
+    transition: all 0.3s ease; 
+}
+.menu-item .nav-link:hover,
+.menu-item.current-menu-item .nav-link {
+    background-color: #00bfff;
+    color: white; 
+    font-weight: bold; 
+    box-shadow: 0 0 10px #00bfff; 
+}
+.active{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.find-location {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: #1a1a2e;
+    padding: 8px; 
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center; 
+    justify-content: baseline; 
+    width: 60%; 
+}
+.find-location input {
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    padding: 0 20px; 
+    flex-grow: 1; 
+    outline: none;
+    font-size: 16px;
+    box-shadow: none;
+}
+
+.find-location input::placeholder {
+    color: #b3b3b3;
+    font-style: italic;
+}
+
+.find-location input:focus {
+    box-shadow: 0px 0px 10px #00bfff;
+}
+.find-location button {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    padding: 0 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px; 
+}
+.find-location button:hover {
+    background-color: #0080ff;
+}
+.weather-container{
+    background-color:#2e3b4e ;
+}
+.card-container {
+    position: absolute;
+    top: 35%;
+    bottom: -11%;
+    background-color: #2e3b4e;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 119px;
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-container img.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.card-container h4, .card-container h5, .card-container h2, .card-container p {
+    margin: 5px 0;
+}
+
+#rowData {
+    display: flex;
+    justify-content: space-between;
+}
+.footer {
+    background-color: #1a1a2e;
+}
+
+.footer .subscribe-form input {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    outline: none;
+    width: calc(70%);
+}
+
+.footer .subscribe-form button {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.footer .social-icons a {
+    color: #00bfff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.contact-section {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    margin: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section {
+    display: none; /* Hide all sections by default */
+}
+
+/* Optional: Style the sections to make them look better */
+section.active {
+    display: block;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+
